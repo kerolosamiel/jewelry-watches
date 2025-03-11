@@ -193,11 +193,17 @@ nav {
 }
 
 /* Hero Section */
+.hero-container {
+  display: flex;
+  height: 100dvh;
+}
+
 .hero-container .text-bx {
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: 65%;
+  gap: 3rem !important;
+  width: 50%;
 }
 
 .hero-container .text-bx .title h1 {
@@ -383,6 +389,7 @@ nav {
 /* Gallery Section */
 .gallery-container .gallery {
   width: 100%;
+  max-width: 1500px;
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: unset;
@@ -438,211 +445,4 @@ nav {
 
 .faq-container .faqs-bx .faq.active .question i {
   transform: rotate(180deg);
-}
-
-/* footer */
-.footer {
-  background-color: #111111;
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-  width: 100%;
-}
-.footer p {
-  font-size: 0.9em;
-  padding-top: 8px;
-}
-.footer .p2 {
-  text-align: right;
-}
-.footer a {
-  color: #ffffff;
-  text-decoration: none;
-  float: right;
-}
-
-/* contact */
-.contact {
-  padding: 30px 0 10px;
-  background: #111111;
-  margin-top: 40px;
-}
-.contact h3 {
-  color: #ffffff;
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-.contact h4 {
-  font-size: 16px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.contact p {
-  color: #e8e8e8;
-  font-size: 14px;
-}
-.contact h5 {
-  font-size: 14px;
-  color: #ffffff;
-}
-.contact .links a {
-  display: block;
-  color: #e8e8e8;
-  text-transform: capitalize;
-  font-size: 14px;
-  text-decoration: none;
-}
-.contact .icon {
-  background-color: red;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-block;
-  padding-top: 10px;
-  font-size: 20px;
-  text-align: center;
-  margin: 10px 5px;
-}
-.contact .info i {
-  color: #ffffff;
-  font-size: 16px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  border: 1px solid white;
-  text-align: center;
-  padding-top: 4px;
-}
-.contact .dayBox p {
-  display: inline-block;
-  width: 90px;
-}
-.contact .btn-info {
-  background-color: #1d93f4;
-  padding: 5px 10px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  border: none;
-}
-/* contact details for mobile */
-
-.mobilecontact {
-  background-color: #111111;
-  padding: 20px 0;
-  display: none;
-  padding-top: 40px;
-}
-.mobilecontact .btn-info {
-  background-color: #1d93f4;
-  margin-left: 10px;
-  font-size: 13px;
-  padding: 4px 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-  border: none;
-}
-.accordion-item {
-  background-color: transparent;
-  margin: 0px 0;
-  width: 100%;
-}
-.accordion-link {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  text-decoration: none;
-}
-.accordion-link:hover {
-  color: white;
-}
-.accordion-link p {
-  width: 100%;
-}
-.accordion-link .ion-remove {
-  display: none;
-  font-size: 0.7em;
-  border: none;
-}
-.accordion-link .ion-add {
-  font-size: 0.7em;
-  border: none;
-}
-
-.accordion .content {
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 650ms;
-}
-.accordion .content p {
-  color: white;
-  margin-left: 10px;
-  font-size: 0.9em;
-}
-.accordion .content .icon {
-  margin: 5px 5px;
-  border: 1px solid rgb(230, 228, 228);
-}
-.accordion .content .icon:first-child {
-  margin-left: 10px;
-}
-.accordion .content::before {
-  content: "";
-  position: absolute;
-  width: 0.3em;
-  height: 90%;
-  background-color: rgb(255, 255, 255);
-  top: 50%;
-  left: 0;
-
-  transform: translateY(-50%);
-}
-.accordion-item:target .content {
-  max-height: 20em;
-}
-.accordion-item:target .accordion-link p {
-  border-bottom: 1px solid white;
-}
-.accordion-item:target .accordion-link .ion-add {
-  display: none;
-}
-.accordion-item:target .accordion-link .ion-remove {
-  display: block;
-}
-.mobilecontact h3 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 0.9em;
-  margin-left: 10px;
-  margin-top: 8px;
-}
-.mobilecontact h5 {
-  font-size: 0.9em;
-  color: white;
-  margin-left: 10px;
-}
-.mobilecontact i {
-  font-size: 1em;
-  color: white;
-  margin-left: 10px;
-  font-size: 14px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 5px;
-  margin-right: 10px;
-}
-.mobilecontact p {
-  margin: 3px;
-}
-.mobilecontact .dayBox:first-child {
-  margin-top: 6px;
-}
-#box1 .content p {
-  font-size: 0.9em;
 }
