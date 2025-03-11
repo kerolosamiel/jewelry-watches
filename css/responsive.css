@@ -1,4 +1,22 @@
+@media (max-width: 1700px) {
+  .hero-container .text-bx {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .hero-container .text-bx {
+    width: 75%;
+  }
+}
+
 @media (max-width: 990.98px) {
+  .hero-container .text-bx {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav-contianer .bottom-header .burger-icon {
     display: flex;
   }
